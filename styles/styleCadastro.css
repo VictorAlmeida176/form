@@ -1,0 +1,67 @@
+main .rightLogin .card {
+  width: 70%;
+}
+
+main .leftLogin .leftImage {
+  width: 45vw;
+}
+
+.gg-eye {
+  position: absolute;
+  bottom: 33px;
+  left: 85%;
+}
+
+.gg-eye:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .leftLogin h1 {
+    display: none;
+  }
+
+  .leftLogin {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .rightLogin {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightLogin .card {
+    width: 100%;
+  }
+
+  .rightLogin .card h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  main {
+    display: none;
+  }
+
+  .error {
+    display: block;
+    margin: 300px 0px;
+  }
+
+  .error h1 {
+    color: black;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleCadastro.css">
+
+    <link href='https://css.gg/eye.css' rel='stylesheet'>
+
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="error">
+        <h1>Tamanho de tela incompativel</h1>
+    </div>
+
+    <main>
+        
+        <div class="leftLogin">
+            <h1>  Crie sua conta <br> E entre para nosso time</h1>
+            <img class="leftImage" src="../assets/Space.svg" alt="">
+
+            
+
+        </div>
+
+        <div class="rightLogin">
+            <div class="card">
+                <h1 id="error-success">Cadastre-se</h1>
+
+                    <div class="textfield">
+                        <label id="labelNome" >Nome:</label>
+                        <input type="text" placeholder="Nome" id="inputNome">
+                    </div>
+
+                    <div class="textfield">
+                        <label id="labelEmail" >Email:</label>
+                        <input  type="email" placeholder="Email" id="inputEmail">
+                    </div>
+
+                    <div class="textfield">
+                        <label id="labelSenha" >Senha:</label>
+                        <input type="password" placeholder="Senha" id="inputSenha">
+                        <i id="eyeSenha" class="gg-eye"></i>
+
+                    </div>
+
+                    <div class="textfield">
+                        <label id="labelConfirmSenha" >Confirmar senha:</label>
+                        <input type="password" placeholder="Confirmar senha" id="inputConfirmSenha">
+                        <i id="verConfirmSenha"  class="gg-eye"></i>
+
+                    </div>
+                    
+
+                    <button onclick="cadastrar()" type="button" >Criar conta</button>
+                    <p> <a href="index.html"> Voltar</a></p>
+                   
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/scriptCadastro.js"></script>
+</body>
+</html>

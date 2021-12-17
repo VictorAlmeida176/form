@@ -1,0 +1,146 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .rightLogin .card {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 35px;
+  background-color: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+main h1 {
+  color: #20ff88;
+  font-size: 3vw;
+  font-weight: 800;
+}
+main .textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+main .textfield input::placeholder {
+  color: #f0ffff94;
+  font-size: 12px;
+}
+
+.textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+}
+
+.textfield label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+main .rightLogin button {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  color: #2b134b;
+  background-color: #00ff88;
+  font-weight: 800;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px 12px #00ff8040;
+}
+
+.leftImage {
+  width: 35vw;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .leftLogin h1 {
+    display: none;
+  }
+
+  .leftLogin {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightLogin {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightLogin .card {
+    width: 100%;
+  }
+
+  .rightLogin .card h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  main {
+    display: none;
+  }
+
+  .error {
+    display: block;
+    margin: 300px 0px;
+  }
+
+  .error h1 {
+    color: black;
+  }
+}
