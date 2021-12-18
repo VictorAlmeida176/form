@@ -36,7 +36,7 @@ const btnLogin = document.querySelector("#btnLogin").addEventListener("click",()
         localStorage.setItem("userLogado", JSON.stringify(userValid))
 
         if(localStorage.token == token){
-            window.location.href = "html/telaInicio.html"
+            window.location.href = "telaInicio.html"
 
         }
 
