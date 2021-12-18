@@ -118,7 +118,7 @@ if(validaNome && validaEmail && validaSenha && validaConfirmSenha){
     
     errorSuccess.innerHTML="Cadastrando..."
     errorSuccess.setAttribute("style","font-size:25px")
-    window.location.href="index.html"
+    window.location.href="../index.html"
 }else{
     errorSuccess.innerHTML="Preencha todos os campos"
     errorSuccess.setAttribute("style","font-size:20px; color:red")
